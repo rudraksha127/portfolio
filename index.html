@@ -1,45 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rudraksh Udiya | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
 
-    <header>
-        <h1>Rudraksh Udiya</h1>
-        <p>Web Developer | Student</p>
-    </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am a beginner web developer learning HTML, CSS, and JavaScript.
-            This is my portfolio project created using Microsoft Copilot guidance.
-        </p>
-        <img src="https://via.placeholder.com/150" alt="Profile photo">
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
+<!-- ================= NAVBAR ================= -->
+<header id="header">
+    <nav class="navbar">
+        <div class="logo">Rudraksh</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#timeline">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+</header>
 
-    <section>
-        <h2>Contact</h2>
-        <button onclick="showMessage()">Click Me</button>
-        <p id="message"></p>
-    </section>
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Rudraksh Udiya</h1>
+        <h2>Full Stack Web Developer</h2>
+        <p>Building scalable, secure, and high-performance web applications.</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn primary">Hire Me</a>
+            <a href="#" class="btn secondary">Download Resume</a>
+        </div>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+    <div class="container two-column">
+        <div>
+            <h2>About Me</h2>
+            <p>
+                I am a results-driven full stack developer with strong expertise in modern web technologies.
+                I focus on building clean, scalable, and user-centric applications that solve real business problems.
+            </p>
+            <p>
+                My career goal is to work on impactful products, contribute to innovative teams,
+                and continuously grow as a software engineer.
+            </p>
+        </div>
+        <div>
+            <ul class="about-list">
+                <li>✔ Full Stack Development</li>
+                <li>✔ REST API Design</li>
+                <li>✔ Performance Optimization</li>
+                <li>✔ Clean Architecture</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section dark">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <p>JavaScript</p>
+                <div class="bar"><span data-width="90%"></span></div>
+                <p>Python</p>
+                <div class="bar"><span data-width="80%"></span></div>
+            </div>
+            <div class="skill-card">
+                <h3>Web Technologies</h3>
+                <p>HTML5 / CSS3</p>
+                <div class="bar"><span data-width="95%"></span></div>
+                <p>Node.js</p>
+                <div class="bar"><span data-width="85%"></span></div>
+            </div>
+            <div class="skill-card">
+                <h3>Tools & Platforms</h3>
+                <p>Git & GitHub</p>
+                <div class="bar"><span data-width="90%"></span></div>
+                <p>Linux</p>
+                <div class="bar"><span data-width="75%"></span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Professional personal portfolio with modern UI/UX.</p>
+                <span>HTML, CSS, JavaScript</span>
+                <div class="project-links">
+                    <a href="#">Live Demo</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>E-Commerce Platform</h3>
+                <p>Full-featured online store with secure payments.</p>
+                <span>Node.js, MongoDB</span>
+                <div class="project-links">
+                    <a href="#">Live Demo</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Task Manager</h3>
+                <p>Productivity app with authentication and analytics.</p>
+                <span>JavaScript, REST API</span>
+                <div class="project-links">
+                    <a href="#">Live Demo</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Blog Platform</h3>
+                <p>SEO-optimized blogging system with admin panel.</p>
+                <span>HTML, CSS, JS</span>
+                <div class="project-links">
+                    <a href="#">Live Demo</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= TIMELINE ================= -->
+<section id="timeline" class="section dark">
+    <div class="container">
+        <h2>Experience & Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>B.Tech – Computer Science</h3>
+                <span>2024 – Present</span>
+                <p>Focused on software engineering, data structures, and system design.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Web Development Instructor</h3>
+                <span>2023 – Present</span>
+                <p>Teaching web technologies and mentoring beginners.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section id="certifications" class="section">
+    <div class="container">
+        <h2>Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card">Full Stack Web Development</div>
+            <div class="cert-card">JavaScript Advanced Certification</div>
+            <div class="cert-card">Git & GitHub Professional</div>
+            <div class="cert-card">Linux Fundamentals</div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section dark">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required/>
+            <input type="email" id="email" placeholder="Your Email" required/>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn primary">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: luckyudiya@gmail.com</p>
+            <p>Phone: +91 9407091581</p>
+            <p>
+                <a href="#">LinkedIn</a> |
+                <a href="#">GitHub</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2025 Rudraksh Udiya. All Rights Reserved.</p>
+    <button id="backToTop">↑</button>
+</footer>
+
+<script src="script.js"></script>
 </body>
-
 </html>
